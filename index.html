@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Junior Task</title>
+    <style></style>
+    <link rel="stylesheet" href="my-style.css" />
+    <script src="my-js.js"></script>
+    <script></script>
+</head>
+
+<body>
+    <div id="my-app">
+        <header>
+            <h1>Web Development Junior Task</h1>
+        </header>
+        <main>
+
+            <p>Click "Render SpaceX Rockets list" button to display rockets</p>
+            <button onclick="renderRockets()">
+                Render SpaceX Rocket list
+            </button>
+            <br />
+            <br />
+            <label for="searchRocket">Search rocket by Name or Description</label>
+            <input id="searchRocket" type="search" />
+            <button id="searchRocketBtn" onclick="searchForRocket()">
+                Search rocket
+            </button>
+
+            <br />
+            <br />
+
+            <label id="labelListRockets" for="rockets"></label>
+            <ul id="rockets"></ul>
+            
+
+            <!-- Modal dialogue with gialogue tag -->
+            <!-- <button class="button open-button" onclick="openModal1()">Open modal</button> -->
+            <dialog class="modal" id="modal">
+                <div id="grid" class="grid"></div>
+                <button class="button close-button" onclick="closeModal()">Close modal</button>
+            </dialog>
+
+        </main>
+        <footer>
+            <p>Created by Jurijs Fedosejevs(c) January/2023</p>
+        </footer>
+    </div>
+
+    <!-- Modal with div's -->
+    <!-- <div id="myModalContainer" class="modal-container">
+            <div id="myModal" class="modal">
+    
+                <button class="close" onclick="closeModal()">Close</button>
+
+                <div id="grid" class="grid"></div>
+            </div>
+        </div> -->
+</body>
+</html>
